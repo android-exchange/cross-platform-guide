@@ -1,0 +1,109 @@
+/* pages/mine/mine.wxss */
+
+.info-container {
+    background-color: #ffffff;
+}
+
+.info-container .username {
+    height: 90rpx;
+    font-size: 36rpx;
+    line-height: 90rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(53, 53, 53, 1);
+    text-align: center;
+}
+
+.info-container .avatar-container {
+    text-align: center;
+}
+
+.info-container .avatar {
+    width: 169rpx;
+    height: 169rpx;
+    margin: 0 auto;
+    border-radius: 169rpx;
+}
+
+.info-container .card-container {
+    width: 715rpx;
+    height: 280rpx;
+    margin: 8rpx auto;
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/mine/bg_mine_hot_2x.png);
+    background-repeat: no-repeat;
+    background-size: 715rpx 280rpx;
+    /* 使用 flex 布局 */
+    display: flex;
+    /* 方向为纵向 */
+    flex-direction: row;
+    /* 设置为可换行 */
+    flex-wrap: wrap;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-content: center;
+    align-items: center;
+}
+
+.info-container .card-container .title {
+    font-size: 33rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 64rpx;
+}
+
+.info-container .card-container .tips {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 64rpx;
+}
+
+.info-container .card-container .button {
+    margin-left: 120rpx;
+    width: 203rpx;
+    height: 63rpx;
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/mine/btn_get_2x.png);
+    background-repeat: no-repeat;
+    background-size: 203rpx 63rpx;
+}
+
+.list-container {
+    width: 100%;
+}
+
+.list-container .item {
+    width: 100%;
+    height: 160rpx;
+    padding: 0 91rpx;
+    line-height: 160rpx;
+    margin-top: 16rpx;
+    background-color: rgba(255, 255, 255, 1);
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(99, 99, 98, 1);
+}
+
+.list-container .favorite {
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/mine/ic_favorite_2x.png);
+    background-repeat: no-repeat;
+    background-size: 44rpx 38rpx;
+    background-position: 31rpx center;
+}
+
+.list-container .collection {
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/mine/ic_collect_2x.png);
+    background-repeat: no-repeat;
+    background-size: 30rpx 41rpx;
+    background-position: 31rpx center;
+}
+
+.list-container .settings {
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/mine/ic_agree_2x.png);
+    background-repeat: no-repeat;
+    background-size: 43rpx 43rpx;
+    background-position: 31rpx center;
+}

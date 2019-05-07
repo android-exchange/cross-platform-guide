@@ -1,0 +1,65 @@
+/* pages/sign-up/sign-up.wxss */
+
+page {
+    background-color: #ffffff;
+}
+
+.container {
+    /* 设置为绝对定位 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 使用 transform 将 image 向上和向左偏移 50% */
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 80rpx;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    width: 200rpx;
+    height: 200rpx;
+}
+
+.tips-container {
+    text-align: center;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(99, 99, 98, 1);
+    line-height: 64rpx;
+}
+
+.tips-container .title {
+    font-size: 36rpx;
+}
+
+.tips-container .tips {
+    font-size: 28rpx;
+}
+
+.input-username, .input-password {
+    width: 100%;
+    height: 80rpx;
+    border-bottom: 4rpx dashed rgba(130, 129, 129, 1);
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(130, 129, 129, 1);
+    line-height: 80rpx;
+}
+
+.input-password {
+    margin-top: 40rpx;
+}
+
+.btn-sign-up {
+    margin: 117rpx auto 111rpx;
+    width: 303rpx;
+    height: 81rpx;
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/sign_up/btn_sign_up_2x.png);
+    background-repeat: no-repeat;
+    background-size: 303rpx 81rpx;
+}

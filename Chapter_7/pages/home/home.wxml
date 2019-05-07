@@ -1,0 +1,22 @@
+<!-- pages/home/home.wxml -->
+<view>
+    <!-- 使用 scroll-view 实现 x 轴滑动 -->
+    <scroll-view scroll-x="{{true}}">
+        <view class="tab-menu" style="width:{{tabList.length*150}}rpx;">
+            <!-- 使用 for 循环便利生成 item 的 view -->
+            <view class="item {{currentTabIndex==index?'active':''}}" wx:for="{{tabList}}" data-item="{{item}}"
+                data-index="{{index}}" wx:key="index" bindtap="onTabItemClick">
+                {{item.name}}
+            </view>
+        </view>
+    </scroll-view>
+    <view class="list-container">
+        <!-- 使用 for 循环便利生成 item 的 view -->
+        <view class="item" wx:for="{{dataList[currentTabIndex]}}" data-item="{{item}}" wx:key="index" bindtap="onItemClick">
+            <view class="cover">
+                <image src="{{item.image}}" mode="aspectFit" />
+            </view>
+            <view class="name">{{item.name}}</view>
+        </view>
+    </view>
+</view>

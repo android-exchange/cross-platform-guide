@@ -1,0 +1,22 @@
+<!-- pages/mine/mine.wxml -->
+<view>
+    <view class="info-container">
+        <view class="username">{{userInfo.username}}</view>
+        <view class="avatar-container">
+            <image class="avatar" src="/images/logo.png" aspectFill />
+        </view>
+        <view class="card-container">
+            <view class="left">
+                <view class="title">强力推荐卡</view>
+                <view class="tips">最给力的书单都在这里</view>
+            </view>
+            <view class="button"></view>
+        </view>
+        <!-- <official-account></official-account> -->
+    </view>
+    <view class="list-container">
+        <view class="item favorite">我想要的书籍</view>
+        <view class="item collection" bindtap="toFavorite">我收藏的书籍</view>
+        <view class="item settings" bindtap="toSettings">设置</view>
+    </view>
+</view>

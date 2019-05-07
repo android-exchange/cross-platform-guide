@@ -1,0 +1,10 @@
+<!-- pages/favorite/favorite.wxml -->
+<view>
+    <view class="list-container">
+        <!-- 使用 for 循环便利生成 item 的 view -->
+        <view class="item" wx:for="{{dataList}}" data-item="{{item}}" wx:key="index" bindtap="onItemClick">
+            <image class="cover" src="{{item.image}}" aspectFill />
+            <view class="title">{{item.name}}</view>
+        </view>
+    </view>
+</view>

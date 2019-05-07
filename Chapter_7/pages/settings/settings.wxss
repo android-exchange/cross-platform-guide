@@ -1,0 +1,15 @@
+/* pages/settings/settings.wxss */
+
+.list-container {
+    width: 100%;
+    margin-top: 80rpx;
+}
+
+.list-container .item {
+    width: 100%;
+    height: 120rpx;
+    padding: 0 80rpx;
+    margin-top: 10rpx;
+    line-height: 120rpx;
+    background-color: #ffffff;
+}

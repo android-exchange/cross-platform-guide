@@ -1,0 +1,86 @@
+/* pages/home/home.wxss */
+
+page {
+    background-color: #F4F4F4;
+}
+
+.tab-menu {
+    min-width: 750rpx;
+    height: 104rpx;
+    background-color: #EAE9E7;
+    /* 使用 flex 布局 */
+    display: flex;
+    /* 方向为纵向 */
+    flex-direction: row;
+    /* 设置为不可换行 */
+    flex-wrap: nowrap;
+    /* 从左边开始布局 */
+    justify-content: flex-start;
+    /* 垂直居中 */
+    align-content: center;
+    align-items: center;
+    padding: 0 34rpx;
+}
+
+.tab-menu .item {
+    height: 74rpx;
+    line-height: 74rpx;
+    padding: 0 10rpx;
+    margin-right: 34rpx;
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: bold;
+    color: rgba(99, 99, 98, 1);
+}
+
+.tab-menu .active {
+    border-bottom: #636362 solid 4rpx;
+}
+
+.list-container {
+    width: 100%;
+    padding: 60rpx 0 60rpx 60rpx;
+    /* 使用 flex 布局 */
+    display: flex;
+    /* 方向为纵向 */
+    flex-direction: row;
+    /* 设置为可换行 */
+    flex-wrap: wrap;
+    /* 从左边开始布局 */
+    justify-content: flex-start;
+    /* 垂直居中 */
+    align-content: center;
+    align-items: center;
+}
+
+.list-container .item {
+    /* 这里使用到了 css 中的 calc 计算函数，详见下面介绍 */
+    width: calc((100% - 180rpx) / 3);
+    margin-right: 60rpx;
+    margin-top: 20rpx;
+    border-radius: 10rpx;
+    padding: 5rpx;
+}
+
+.list-container .item .cover {
+    width: 100%;
+    height: 240rpx;
+    border: 2rpx solid #B9B9BB;
+    background-color: #ffffff;
+    border-radius: 6rpx;
+}
+
+.list-container .item .cover image {
+    width: 100%;
+    height: 100%;
+}
+
+.list-container .item .name {
+    text-align: center;
+    height: 70rpx;
+    font-size: 24rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(52, 52, 52, 1);
+    line-height: 70rpx;
+}

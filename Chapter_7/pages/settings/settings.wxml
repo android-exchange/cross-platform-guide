@@ -1,0 +1,7 @@
+<!-- pages/settings/settings.wxml -->
+<view>
+    <view class="list-container">
+        <view class="item" bindtap="toSignOut">退出登录</view>
+        <view class="item">关于</view>
+    </view>
+</view>

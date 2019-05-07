@@ -1,0 +1,215 @@
+/* pages/detail/detail.wxss */
+
+.cover {
+    width: 100%;
+    height: 414rpx;
+    /* 设置为相对定位 */
+    position: relative;
+    background-color: #ffffff;
+}
+
+.cover image {
+    width: 235rpx;
+    height: 306rpx;
+    /* 设置为绝对定位 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 使用 transform 将 image 向上和向左偏移 50% */
+    transform: translate(-50%, -50%);
+}
+
+.title-container {
+    /* 使用 flex 布局 */
+    display: flex;
+    /* 方向为纵向 */
+    flex-direction: row;
+    /* 设置为不可换行 */
+    flex-wrap: nowrap;
+    /* 从左右两端开始布局，中间留间隙 */
+    justify-content: space-between;
+    /* 垂直居中 */
+    align-content: center;
+    align-items: center;
+    padding: 0 40rpx;
+    height: 133rpx;
+    background-color: #ffffff;
+    border-top: 6rpx dashed rgba(130, 129, 129, 1);
+}
+
+.title-container .title {
+    font-size: 36rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(99, 99, 98, 1);
+    line-height: 133rpx;
+}
+
+.title-container .favorite {
+    height: 133rpx;
+    font-size: 33rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(99, 99, 98, 1);
+    line-height: 133rpx;
+    padding-right: 66rpx;
+}
+
+.title-container .normal {
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/detail/ic_favorite_normal_2x.png);
+    background-repeat: no-repeat;
+    background-size: 46rpx 46rpx;
+    background-position: right center;
+}
+
+.title-container .selected {
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/detail/ic_favorite_selected_2x.png);
+    background-repeat: no-repeat;
+    background-size: 46rpx 46rpx;
+    background-position: right center;
+}
+
+.introduce {
+    padding: 40rpx;
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(99, 99, 98, 1);
+    line-height: 64rpx;
+}
+
+.comment-title-container {
+    padding: 0 40rpx;
+    height: 133rpx;
+    background-color: #ffffff;
+    font-size: 33rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(99, 99, 98, 1);
+    line-height: 133rpx;
+    border-bottom: 6rpx dashed rgba(130, 129, 129, 1);
+}
+
+.comment-info-container {
+    padding: 40rpx 40rpx 200rpx 40rpx;
+    background-color: #ffffff;
+    font-size: 33rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(99, 99, 98, 1);
+}
+
+.comment-info-container .item {
+    height: 140rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.comment-info-container .item .avatar {
+    width: 89rpx;
+    height: 89rpx;
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 89rpx 89rpx;
+    border-radius: 89rpx;
+}
+
+.comment-info-container .item .right {
+    /* 与 flex 布局结合使用，表示该子元素填充剩余的空间 */
+    flex-grow: 1;
+    margin-left: 10rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.comment-info-container .item .right .text {
+    /* 嵌套使用 flex 布局 */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.comment-info-container .item .right .text .username {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(130, 129, 129, 1);
+}
+
+.comment-info-container .item .right .text .content {
+    font-size: 33rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(99, 99, 98, 1);
+    margin-top: 10rpx;
+}
+
+.comment-info-container .item .right .agree {
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(130, 129, 129, 1);
+    line-height: 64rpx;
+    padding-right: 65rpx;
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/detail/ic_agree_2x.png);
+    background-repeat: no-repeat;
+    background-size: 45rpx 45rpx;
+    background-position: right center;
+}
+
+.comment-container {
+    width: 100%;
+    height: 116rpx;
+    background-color: #EAE9E7;
+    /* 使用 fixed 定位使 view 固定在底部 */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    /* 使用 flex 布局 */
+    display: flex;
+    /* 方向为纵向 */
+    flex-direction: row;
+    /* 设置为不可换行 */
+    flex-wrap: nowrap;
+    /* 从左右两端开始布局，中间留间隙 */
+    justify-content: space-between;
+    /* 垂直居中 */
+    align-content: center;
+    align-items: center;
+}
+
+.comment-container .input-comment {
+    flex-grow: 1;
+    height: 70rpx;
+    border: 1rpx dashed #D3D0D0;
+    margin-left: 20rpx;
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(130, 129, 129, 1);
+    line-height: 70rpx;
+    padding: 0 20rpx;
+    background-color: #DFDDDD;
+}
+
+.comment-container .btn-submit {
+    width: 180rpx;
+    height: 70rpx;
+    margin: 0 20rpx;
+    font-size: 36rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(130, 129, 129, 1);
+    line-height: 70rpx;
+}

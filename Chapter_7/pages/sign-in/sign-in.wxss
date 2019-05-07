@@ -1,0 +1,81 @@
+/* pages/sign-in/sign-in.wxss */
+
+page {
+    background-color: #ffffff;
+}
+
+.container {
+    /* 组合使用开始，使用绝对定位 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 使用 transform 将 view 在屏幕上垂直水平居中*/
+    transform: translate(-50%, -50%);
+    /* 组合使用结束 */
+    width: 100%;
+    padding: 0 80rpx;
+}
+
+.tips-container {
+    text-align: center;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(99, 99, 98, 1);
+    line-height: 64rpx;
+}
+
+.tips-container .title {
+    font-size: 36rpx;
+}
+
+.tips-container .tips {
+    font-size: 44rpx;
+}
+
+.input-username, .input-password {
+    width: 100%;
+    height: 80rpx;
+    background: rgba(229, 229, 229, 1);
+    border-radius: 15rpx;
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(130, 129, 129, 1);
+    line-height: 80rpx;
+    padding: 0 15rpx;
+}
+
+.input-username {
+    margin-top: 84rpx;
+}
+
+.input-password {
+    margin-top: 20rpx;
+}
+
+.sign-up-container {
+    width: 100%;
+    height: 80rpx;
+    margin-top: 20rpx;
+    position: relative;
+}
+
+.sign-up-container .btn-sign-up {
+    height: 70rpx;
+    position: absolute;
+    left: 0;
+    line-height: 70rpx;
+    font-size: 28rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-weight: 500;
+    color: rgba(89, 193, 227, 1);
+}
+
+.btn-sign-in {
+    margin: 52rpx auto 111rpx;
+    width: 303rpx;
+    height: 81rpx;
+    background-image: url(https://raw.githubusercontent.com/jeanboydev/GBook/master/images/sign_in/btn_sign_in_2x.png);
+    background-repeat: no-repeat;
+    background-size: 303rpx 81rpx;
+}

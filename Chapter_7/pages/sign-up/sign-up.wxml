@@ -1,0 +1,17 @@
+<!-- pages/sign-up/sign-up.wxml -->
+<view>
+    <view class="container">
+        <view class="logo-container">
+            <image class="logo" src="/images/sign_up/bg_avatar_2x.png" aspectFill />
+        </view>
+        <view class="tips-container">
+            <text class="title">您好！</text>
+            <view class="tips">欢迎来到注册页面</view>
+        </view>
+        <!-- bindinput 键盘输入时触发，用于接收键盘输入的值 -->
+        <input class="input-username" placeholder="请输入用户名" auto-focus confirm-type="next" bindinput="onUsernameInput" />
+        <input class="input-password" placeholder="请输入密码" password confirm-type="done" bindinput="onPasswordInput" />
+        <!-- bindtap 当用户点击时触发绑定的函数 -->
+        <view class="btn-sign-up" bindtap="toSignUp"></view>
+    </view>
+</view>

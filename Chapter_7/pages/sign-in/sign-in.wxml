@@ -1,0 +1,17 @@
+<!-- pages/sign-in/sign-in.wxml -->
+<view>
+    <view class="container">
+        <view class="tips-container">
+            <text class="title">您好！</text>
+            <view class="tips">欢迎来到登录页面</view>
+        </view>
+        <!-- bindinput 键盘输入时触发，用于接收键盘输入的值 -->
+        <input class="input-username" placeholder="请输入用户名" auto-focus confirm-type="next" bindinput="onUsernameInput" />
+        <input class="input-password" placeholder="请输入密码" password confirm-type="done" bindinput="onPasswordInput" />
+        <view class="sign-up-container">
+            <view class="btn-sign-up" bindtap="toSignUp">没有账号？注册一个吧</view>
+        </view>
+        <!-- bindtap 当用户点击时触发绑定的函数 -->
+        <view class="btn-sign-in" bindtap="toSignIn"></view>
+    </view>
+</view>
