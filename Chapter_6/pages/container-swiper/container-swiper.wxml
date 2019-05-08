@@ -1,0 +1,13 @@
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000">
+        <swiper-item>
+            <view class="a" />
+        </swiper-item>
+        <swiper-item>
+            <view class="b" />
+        </swiper-item>
+        <swiper-item>
+            <view class="c" />
+        </swiper-item>
+    </swiper>
+</view>

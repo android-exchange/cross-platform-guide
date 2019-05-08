@@ -1,0 +1,6 @@
+<view>
+    <view class="title">web-view</view>
+    <view class="item-container">
+        <web-view src="https://jeanboy.cn"></web-view>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+{
+    "pages": [
+        "pages/tab1/tab1",
+        "pages/container-view/container-view",
+        "pages/container-scroll-view/container-scroll-view",
+        "pages/container-swiper/container-swiper",
+        "pages/container-base/container-base",
+        "pages/container-form/container-form",
+        "pages/container-media/container-media",
+        "pages/container-map/container-map",
+        "pages/container-web-view/container-web-view"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "DEMO",
+        "navigationBarTextStyle": "black"
+    }
+}

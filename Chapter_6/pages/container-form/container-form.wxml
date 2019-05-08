@@ -1,0 +1,55 @@
+<view>
+    <view class="title">button</view>
+    <view class="item-container">
+        <button type="default">default</button>
+        <button type="primary">primary</button>
+        <button type="warn">warn</button>
+    </view>
+    <view class="title">checkbox</view>
+    <view class="item-container">
+        <checkbox-group bindchange="checkboxChange">
+            <label class="checkbox" wx:for="{{checkBoxItems}}" wx:key="index">
+                <checkbox value="{{item.value}}" checked="{{item.checked}}" />
+                {{item.name}}
+            </label>
+        </checkbox-group>
+    </view>
+    <view class="title">radio</view>
+    <view class="item-container">
+        <radio-group class="radio-group" bindchange="radioChange">
+            <label class="radio" wx:for="{{radioItems}}" wx:key="index">
+                <radio value="{{item.value}}" checked="{{item.checked}}" />
+                {{item.name}}
+            </label>
+        </radio-group>
+    </view>
+    <view class="title">input</view>
+    <view class="item-container">
+        <input placeholder="这是一个 input" />
+    </view>
+    <view class="title">textarea</view>
+    <view class="item-container">
+        <textarea placeholder="这是一个 textarea" />
+    </view>
+    <view class="title">form</view>
+    <view class="item-container">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <button formType="submit">Submit</button>
+            <button formType="reset">Reset</button>
+        </form>
+    </view>
+    <view class="title">slider</view>
+    <view class="item-container">
+        <slider bindchange="sliderChange" step="5" />
+    </view>
+    <view class="title">switch</view>
+    <view class="item-container">
+        <switch bindchange="switchChange" />
+    </view>
+    <view class="title">picker</view>
+    <view class="item-container">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">当前选择：{{array[index]}}</view>
+        </picker>
+    </view>
+</view>

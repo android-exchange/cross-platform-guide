@@ -1,0 +1,19 @@
+<view>
+    <view class="title">image</view>
+    <view class="item-container">
+        <image src="https://developers.weixin.qq.com/miniprogram/introduction/image/a.png?t=18110117" mode="scaleToFill" style="width: 200px; height: 200px; background-color: #eeeeee;"></image>
+    </view>
+    <view class="title">audio</view>
+    <view class="item-container">
+        <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{audioSrc}}" id="myAudio" controls loop></audio>
+        <button type="primary" bindtap="audioPlay">播放</button>
+        <button type="primary" bindtap="audioPause">暂停</button>
+        <button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+        <button type="primary" bindtap="audioStart">回到开头</button>
+    </view>
+    <view class="title">video</view>
+    <view class="item-container">
+        <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+        <button bindtap="bindButtonTap">获取视频</button>
+    </view>
+</view>

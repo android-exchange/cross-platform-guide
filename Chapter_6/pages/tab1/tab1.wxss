@@ -1,0 +1,26 @@
+/* pages/tab1/tab1.wxss */
+
+page {
+    background-color: #f2f2f2;
+    padding-bottom: 40rpx;
+}
+
+.item-container {
+    background-color: #fff;
+    margin: 20rpx 40rpx 0;
+    padding: 10rpx 40rpx;
+}
+
+.item-container .title {
+    height: 100rpx;
+    color: #808080;
+    line-height: 100rpx;
+    font-size: 32rpx;
+}
+
+.item-container .item {
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 42rpx;
+    border-top: 2rpx solid #f2f2f2;
+}

@@ -1,0 +1,40 @@
+<!-- pages/tab1/tab1.wxml -->
+<view>
+    <view class='item-container'>
+        <view class='title'>视图容器</view>
+        <view class='item' bindtap="toView">view</view>
+        <view class='item' bindtap="toScrollView">scroll-view</view>
+        <view class='item' bindtap="toSwiper">swiper</view>
+    </view>
+    <view class='item-container'>
+        <view class='title'>基础内容</view>
+        <view class='item' bindtap="toBase">text</view>
+        <view class='item' bindtap="toBase">progress</view>
+    </view>
+    <view class='item-container'>
+        <view class='title'>表单组件</view>
+        <view class='item' bindtap="toForm">button</view>
+        <view class='item' bindtap="toForm">checkbox</view>
+        <view class='item' bindtap="toForm">radio</view>
+        <view class='item' bindtap="toForm">input</view>
+        <view class='item' bindtap="toForm">textarea</view>
+        <view class='item' bindtap="toForm">form</view>
+        <view class='item' bindtap="toForm">slider</view>
+        <view class='item' bindtap="toForm">switch</view>
+        <view class='item' bindtap="toForm">picker</view>
+    </view>
+    <view class='item-container'>
+        <view class='title'>媒体组件</view>
+        <view class='item' bindtap="toMedia">image</view>
+        <view class='item' bindtap="toMedia">audio</view>
+        <view class='item' bindtap="toMedia">video</view>
+    </view>
+    <view class='item-container'>
+        <view class='title'>地图</view>
+        <view class='item' bindtap="toMap">map</view>
+    </view>
+    <view class='item-container'>
+        <view class='title'>开放能力</view>
+        <view class='item' bindtap="toWebView">web-view</view>
+    </view>
+</view>

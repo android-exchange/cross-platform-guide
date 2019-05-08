@@ -1,0 +1,14 @@
+<view>
+    <view class="title">横向布局</view>
+    <view class="flex-row">
+        <view class="a">A</view>
+        <view class="b">B</view>
+        <view class="c">C</view>
+    </view>
+    <view class="title">纵向布局</view>
+    <view class="flex-column">
+        <view class="a">A</view>
+        <view class="b">B</view>
+        <view class="c">C</view>
+    </view>
+</view>
